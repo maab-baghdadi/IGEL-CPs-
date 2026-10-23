@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maab Baghdadi's Data Analytics Portfolio">
+  <title>Maab Baghdadi | Data Analyst Portfolio</title>
+
+  <style>
+    :root {
+      --navy: #142b4a;
+      --blue: #2563eb;
+      --light: #f5f7fb;
+      --text: #243247;
+      --muted: #66758a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Tahoma, sans-serif;
+      color: var(--text);
+      background: white;
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 18px 7%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    button, .button {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 8px;
+      border: 1px solid var(--blue);
+      background: var(--blue);
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .language {
+      background: transparent;
+      border-color: white;
+    }
+
+    .hero {
+      padding: 85px 7%;
+      background: linear-gradient(135deg, #142b4a, #244b78);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 6vw, 54px);
+      line-height: 1.2;
+      margin: 12px 0;
+    }
+
+    .hero p { max-width: 650px; }
+
+    .eyebrow {
+      color: #a9c9ff;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    section { padding: 55px 7%; }
+
+    section h2 {
+      color: var(--navy);
+      font-size: 28px;
+    }
+
+    .intro { max-width: 760px; }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 22px;
+      border: 1px solid #e1e7f0;
+      border-radius: 12px;
+      background: white;
+    }
+
+    .card h3 { color: var(--navy); }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      margin: 3px;
+      border-radius: 20px;
+      background: #eaf1ff;
+      color: #214e9a;
+      font-size: 13px;
+    }
+
+    .muted { color: var(--muted); }
+
+    .contact { background: var(--light); }
+
+    footer {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 22px;
+    }
+
+    a { overflow-wrap: anywhere; }
+
+    [hidden] { display: none !important; }
+
+    @media (max-width: 600px) {
+      .hero { padding-top: 55px; padding-bottom: 55px; }
+      nav { align-items: flex-start; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <strong>MAAB BAGHDADI</strong>
+
+      <div>
+        <a href="#about" data-en="About" data-ar="نبذة عني">About</a>
+        <a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a>
+        <a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a>
+        <a href="#contact" data-en="Contact" data-ar="تواصل معي">Contact</a>
+        <button class="language" id="languageBtn" type="button">
+          العربية
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <p class="eyebrow"
+         data-en="MY PROFESSIONAL PORTFOLIO"
+         data-ar="معرض أعمالي الاحترافي">
+        MY PROFESSIONAL PORTFOLIO
+      </p>
+
+      <h1 data-en="Hello, I'm Maab Baghdadi"
+          data-ar="مرحباً، أنا مآب بغدادي">
+        Hello, I'm Maab Baghdadi
+      </h1>
+
+      <h2 style="color:white"
+          data-en="Aspiring Data Analyst"
+          data-ar="محللة بيانات طموحة">
+        Aspiring Data Analyst
+      </h2>
+
+      <p data-en="IT graduate passionate about data analysis, data cleaning, and data visualization. I am building practical projects to turn data into meaningful insights."
+         data-ar="خريجة تقنية معلومات مهتمة بتحليل البيانات وتنظيفها وتصويرها بصرياً. أعمل على بناء مشاريع عملية لتحويل البيانات إلى معلومات مفيدة.">
+        IT graduate passionate about data analysis, data cleaning,
+        and data visualization. I am building practical projects
+        to turn data into meaningful insights.
+      </p>
+
+      <a class="button" href="#projects"
+         data-en="Explore My Projects"
+         data-ar="استكشفي مشاريعي">Explore My Projects</a>
+    </div>
+
+    <section id="about">
+      <h2 data-en="About Me" data-ar="نبذة عني">About Me</h2>
+
+      <p class="intro"
+         data-en="I hold a Bachelor's degree (Honours) in Information Technology. I am developing my skills in data analysis and enjoy organizing data, identifying patterns, and presenting findings clearly. My goal is to grow as a Data Analyst through continuous learning and hands-on projects."
+         data-ar="حاصلة على بكالوريوس الشرف في تقنية المعلومات. أعمل على تطوير مهاراتي في تحليل البيانات، وأهتم بتنظيم البيانات واكتشاف الأنماط وعرض النتائج بصورة واضحة. هدفي هو التطور مهنياً في مجال تحليل البيانات من خلال التعلم المستمر والمشاريع العملية.">
+        I hold a Bachelor's degree (Honours) in Information Technology.
+        I am developing my skills in data analysis and enjoy organizing
+        data, identifying patterns, and presenting findings clearly.
+        My goal is to grow as a Data Analyst through continuous learning
+        and hands-on projects.
+      </p>
+    </section>
+
+    <section id="skills" style="background:var(--light)">
+      <h2 data-en="Skills & Tools" data-ar="المهارات والأدوات">
+        Skills & Tools
+      </h2>
+
+      <div class="skills">
+        <div class="card">
+          <h3>Microsoft Excel</h3>
+          <p data-en="Data organization, cleaning, PivotTables and analysis."
+             data-ar="تنظيم البيانات وتنظيفها واستخدام الجداول المحورية والتحليل.">
+            Data organization, cleaning, PivotTables and analysis.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>SQL</h3>
+          <p data-en="Learning database queries and data quality checks."
+             data-ar="التعلم العملي للاستعلامات وفحص جودة البيانات.">
+            Learning database queries and data quality checks.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Power BI</h3>
+          <p data-en="A learning goal: interactive reports and dashboards."
+             data-ar="هدف تعلّم: التقارير ولوحات المعلومات التفاعلية.">
+            A learning goal: interactive reports and dashboards.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Data Analysis</h3>
+          <p data-en="Data quality, reporting and communicating findings."
+             data-ar="جودة البيانات وإعداد التقارير وتوضيح النتائج.">
+            Data quality, reporting and communicating findings.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 data-en="Featured Projects" data-ar="أبرز المشاريع">
+        Featured Projects
+      </h2>
+
+      <div class="projects">
+        <div class="card">
+          <h3 data-en="Hospital Appointments Analysis"
+              data-ar="تحليل مواعيد المستشفى">
+            Hospital Appointments Analysis
+          </h3>
+
+          <p data-en="A practice project exploring appointment records, data quality, and healthcare reporting."
+             data-ar="مشروع تدريبي لدراسة بيانات المواعيد وفحص جودتها وإعداد تقارير عن بيانات المستشفى.">
+            A practice project exploring appointment records,
+            data quality, and healthcare reporting.
+          </p>
+
+          <span class="tag">Excel</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Power BI</span>
+
+          <p class="muted"
+             data-en="In progress"
+             data-ar="قيد التنفيذ">
+            In progress
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 data-en="More Projects Coming Soon"
+              data-ar="مشاريع أخرى قريباً">
+            More Projects Coming Soon
+          </h3>
+
+          <p data-en="New projects will be added as I continue learning and practicing."
+             data-ar="سأضيف مشاريع جديدة مع استمرار التعلم والتطبيق العملي.">
+            New projects will be added as I continue learning
+            and practicing.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 data-en="Contact Me" data-ar="تواصل معي">Contact Me</h2>
+
+      <p data-en="I welcome professional connections and entry-level opportunities in data analysis."
+         data-ar="يسعدني التواصل المهني والتعرف على فرص العمل المبتدئة في تحليل البيانات.">
+        I welcome professional connections and entry-level
+        opportunities in data analysis.
+      </p>
+
+      <p>
+        <a href="https://www.linkedin.com/" target="_blank"
+           rel="noopener noreferrer">LinkedIn</a>
+        &nbsp; | &nbsp;
+        <a href="https://github.com/" target="_blank"
+           rel="noopener noreferrer">GitHub</a>
+      </p>
+      <p class="muted"
+         data-en="Replace these links with your own profile links."
+         data-ar="استبدلي الروابط أعلاه بروابط حساباتك الشخصية.">
+        Replace these links with your own profile links.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Maab Baghdadi · Data Analytics Portfolio</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById("languageBtn");
+
+    function setLanguage(lang) {
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+
+      document.querySelectorAll("[data-en]").forEach(element => {
+        element.textContent =
+          element.getAttribute("data-" + lang);
+      });
+
+      btn.textContent = lang === "en" ? "العربية" : "English";
+      btn.setAttribute("aria-label",
+        lang === "en" ? "Switch to Arabic" : "Switch to English");
+    }
+
+    btn.addEventListener("click", () => {
+      const nextLanguage =
+        document.documentElement.lang === "en" ? "ar" : "en";
+      setLanguage(nextLanguage);
+    });
+  </script>
+</body>
+</html>
